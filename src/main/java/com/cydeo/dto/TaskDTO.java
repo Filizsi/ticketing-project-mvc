@@ -11,7 +11,7 @@ import java.util.UUID;
 @Data
 public class TaskDTO {
 
-    private Long id;
+    private Long id;//postgress will assign it
     private ProjectDTO project;
     private UserDTO assignedEmployee;
     private String taskSubject;

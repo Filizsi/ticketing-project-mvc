@@ -72,8 +72,11 @@ public class TaskController {
 //        return "redirect:/task/create";
 //    }
 
+    //this and above one are doing the same, id comes from DTO and spring is understanding this,
+    // variable name should be the same, capture id and knows that that id for that task
     @PostMapping("/update/{id}")
     public String updateTask(TaskDTO task) {
+        //task.id=id spring does this part
         taskService.update(task);
         return "redirect:/task/create";
     }
